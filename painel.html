@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sistema</title>
+	<link rel="stylesheet" type="text/css" href="static/css/painel.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+	<!-- Fontawesome -->
+
+	<script src="https://kit.fontawesome.com/39ec67b48e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<nav>
+		<h1 class="logo-painel" href="#">Painel do Administrador</h1>
+		
+		<button class="logout" id="sair" type="button" onclick="sair()">Sair</button>
+		
+	</nav>
+
+	<div id="boxmodal">
+	<main>
+		<div class="menu-box">
+			<h1 class="menu-title">Opçoes</h1>
+			<div>
+				<button id="cadastrar" class="sucess-button">Novo cadastro</button>
+			</div>
+			<div class="pesquisar">
+				<form>
+					<input class="input-pesquisar" type="text" name="" placeholder="Usuário">
+					<button class="submit-pesquisar" onclick="pesquisa()" type="submit">Buscar</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<main>
+		<div class="menu-box">
+			<h1 class="menu-title">Usuarios</h1>
+			<table>
+				<thead>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>telefone</th>
+					<th class="table-btn">Editar</th>
+					<th class="table-btn">Excluir</th>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<th>Teste</th>
+						<th>teste@email.teste</th>
+						<th>(11) 9 4002-8922</th>
+						<th class="table-btn"><button id="1" class="editar-btn">Editar</button></th>
+						<th class="table-btn"><button class="excluir-btn">Excluir</button></th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th>Teste</th>
+						<th>teste@email.teste</th>
+						<th>(11) 9 4002-8922</th>
+						<th class="table-btn"><button id="2" class="editar-btn">Editar</button></th>
+						<th class="table-btn"><button class="excluir-btn">Excluir</button></th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>Teste</th>
+						<th>teste@email.teste</th>
+						<th>(11) 9 4002-8922</th>
+						<th class="table-btn"><button id="3" class="editar-btn">Editar</button></th>
+						<th class="table-btn"><button class="excluir-btn">Excluir</button></th>
+					</tr>
+					<tr>
+						<th>4</th>
+						<th>Teste</th>
+						<th>teste@email.teste</th>
+						<th>(11) 9 4002-8922</th>
+						<th class="table-btn"><button id="3" class="editar-btn">Editar</button></th>
+						<th class="table-btn"><button class="excluir-btn">Excluir</button></th>
+					</tr>
+					<tr>
+						<th>5</th>
+						<th>Teste</th>
+						<th>teste@email.teste</th>
+						<th>(11) 9 4002-8922</th>
+						<th class="table-btn"><button id="3" class="editar-btn">Editar</button></th>
+						<th class="table-btn"><button class="excluir-btn">Excluir</button></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="static/js/functions.js"></script>
+	<script src="static/js/modals.js"></script>
+	<script src="static/js/fecharModals.js"></script>
+	<script src="static/js/cadastroController.js"></script>
+
+</body>
+</html>
+
